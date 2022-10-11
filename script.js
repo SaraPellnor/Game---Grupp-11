@@ -7,10 +7,10 @@ const btnRed = document.querySelector(".btnRed");
 btnBlue.addEventListener("click", blue);
 btnRed.addEventListener("click", red);
 
-const goBlue = goBlue;
+const goBlue = localStorage.getItem ("player");
 
 function blue() {
-    localStorage.setItem("player", goBlue);
+    localStorage.setItem("player", JSON.stringify (goBlue));
 }
 
 
