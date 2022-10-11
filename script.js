@@ -6,13 +6,11 @@ btnBlue.addEventListener("click", blue);
 btnRed.addEventListener("click", red);
 
 function blue() {
-    localStorage.removeItem("Active Player")
-    localStorage.setItem("Active Player", "Player Blue")
+    localStorage.setItem("Active Player", "Player Blue") //sätter nyckeln active player och värdet player blue i LS
 }
 
 function red() {
-    localStorage.removeItem("Active Player")
-    localStorage.setItem("Active Player", "Player Red")
+    localStorage.setItem("Active Player", "Player Red") //ersätter nyckeln active player med värdet player red i LS
 }
 
 
@@ -21,6 +19,6 @@ for (const circle of circles) {
 }
 
 function playerTwo(e) {
-    e.target.style.backgroundColor = "red"
+    e.target.style.backgroundColor = "blue"
 }
 
